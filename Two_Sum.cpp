@@ -1,13 +1,3 @@
-#include <algorithm>
-#include <iostream>
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
-#include <math.h>
-#include <vector>
-#include <map>
-using namespace std;
-
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
@@ -21,14 +11,3 @@ public:
         }
     }
 };
-
-int main() {
-    Solution ss;
-    vector<int> x;
-    x.push_back(3);
-    x.push_back(2);
-    x.push_back(4);
-    vector<int> ans = ss.twoSum(x, 6);
-    cout << ans[0] << ' ' << ans[1] << endl;
-    return 0;
-}
