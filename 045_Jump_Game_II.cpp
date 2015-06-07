@@ -7,7 +7,7 @@ public:
             int tmp = up;
             for(int i = dn; i <= up; i++)
                 tmp = max(tmp, i + nums[i]);
-            dn++, up = max(dn, tmp);
+            dn++, up = tmp;
         }
         return ans;
     }
